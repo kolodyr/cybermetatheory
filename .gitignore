@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+.obsidian/
+
+# Logs
+*.log
+
+# Large files
+assets.zip
+*.zip
+
+# Screenshots and images (too large for GitHub)
+assets/screenshots/
+assets/images/
+*.pdf

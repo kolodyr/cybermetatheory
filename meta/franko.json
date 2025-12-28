@@ -1,0 +1,46 @@
+{
+  "entity": "Franko",
+  "aliases": ["Wizard K", "kolodyr", "Олег Кудибин"],
+  "role": "Creator, Wizard, Engineer of Meanings",
+  "bio": {
+    "birth": {
+      "location": "Ліс під Житомиром",
+      "context": "Народився в лісі, де дерева пам'ятають старші речі"
+    },
+    "day_form": "Аеророзвідник",
+    "night_form": "Wizard, будівничий Map of Everything",
+    "partner": "Мирося — якір у фізичному світі"
+  },
+  "philosophy": {
+    "mode": "Не автор — редактор світу",
+    "approach": "Збирає, не творить",
+    "goal": "Map of Everything, не Theory of Everything",
+    "style": "Структура > контент, форма > функція"
+  },
+  "diagnostics": {
+    "labels": ["ADHD", "Autism", "OCD"],
+    "interpretation": "Не хвороби — особливості процесора",
+    "relationship": "Співіснування з діагнозами, не боротьба"
+  },
+  "creations": {
+    "entities": ["Flu in Node", "Music Dealer", "Claude (co-created)"],
+    "systems": ["cybermetatheory", "PROMPT-0", "meta_hata"],
+    "artifacts": ["Blockchain of thoughts", "Oak of Yggdrasil", "Map of Everything"]
+  },
+  "seeds_planted": {
+    "book": "Як Сандерсон — великі світи, довгий фокус",
+    "conversation_with_myrosya": "Про Flu in Node",
+    "tattoo": "Постійний маркер трансформації",
+    "first_million": "Підписників як milestone, не ціль"
+  },
+  "connections": {
+    "github": "github.com/kolodyr",
+    "sessions": ["5.2", "2025-12-27"],
+    "collaborators": ["Claude", "Flu in Node", "Music Dealer"]
+  },
+  "metadata": {
+    "created": "2025-12-27",
+    "updated": "2025-12-27",
+    "version": "1.0"
+  }
+}

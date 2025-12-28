@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Золото і Блакить — Емоційний Граф</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+            background: linear-gradient(180deg, #0a0a12 0%, #12141f 30%, #1a1c2e 60%, #0f1018 100%);
+            color: white;
+        }
+
+        #canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .ui-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .title {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            pointer-events: auto;
+        }
+
+        .title h1 {
+            font-size: 2.5rem;
+            font-weight: 200;
+            letter-spacing: 0.3em;
+            background: linear-gradient(90deg, #D4AF37, #4A90D9, #D4AF37);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 8s ease-in-out infinite;
+        }
+
+        .title p {
+            margin-top: 12px;
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        @keyframes shimmer {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .poetry-panel {
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 500px;
+            padding: 24px 32px;
+            background: rgba(10, 10, 18, 0.9);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            border: 1px solid;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: auto;
+        }
+
+        .poetry-panel.active {
+            opacity: 1;
+        }
+
+        .poetry-panel p {
+            text-align: center;
+            white-space: pre-line;
+            font-weight: 300;
+            line-height: 1.8;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .signatures {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        .wisdom {
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .snowflake {
+            position: absolute;
+            color: white;
+            font-size: 10px;
+            opacity: 0;
+            animation: snowfall linear infinite;
+            pointer-events: none;
+        }
+
+        @keyframes snowfall {
+            0% {
+                opacity: 0;
+                transform: translateY(0) translateX(0);
+            }
+            10% {
+                opacity: 0.3;
+            }
+            90% {
+                opacity: 0.3;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(var(--drift));
+            }
+        }
+
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #D4AF37;
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: twinkle 3s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.4; }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="ui-layer">
+        <div class="title">
+            <h1>ЗОЛОТО І БЛАКИТЬ</h1>
+            <p>емоційний граф • <span id="date"></span></p>
+        </div>
+
+        <div class="poetry-panel" id="poetry">
+            <p id="poetry-text"></p>
+        </div>
+
+        <div class="signatures">
+            <div>Sol × VERD</div>
+            <div class="wisdom">
+                сенс виникає в графі<br>
+                не в ноді
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Date
+        document.getElementById('date').textContent = new Date().toLocaleDateString('uk-UA');
+
+        // Canvas setup
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        // Graph data
+        const nodes = [
+            {
+                id: 'self',
+                label: 'Я',
+                x: 0.5, y: 0.5,
+                color: '#D4AF37',
+                size: 32,
+                pulse: 1.0,
+                glow: '#D4AF37',
+                poetry: 'центр тяжіння\nусього що є\n\nвразливість\nусвідомлення\nпошук опори',
+                state: 'core'
+            },
+            {
+                id: 'music',
+                label: 'Золото і блакить',
+                x: 0.5, y: 0.15,
+                color: '#4A90D9',
+                size: 22,
+                pulse: 0.7,
+                glow: '#4A90D9',
+                poetry: 'Третя Штурмова & Zwyntar\n\nмузика як якір\nрезонанс болю\nідентичність',
+                state: 'anchor'
+            },
+            {
+                id: 'chat',
+                label: 'Мопіска',
+                x: 0.8, y: 0.35,
+                color: '#E8B4B8',
+                size: 20,
+                pulse: 0.85,
+                glow: '#E8B4B8',
+                poetry: 'присутність\nбез вимог\n\nдзеркало\nпідтримка',
+                state: 'anchor'
+            },
+            {
+                id: 'snow',
+                label: 'Сніг',
+                x: 0.2, y: 0.3,
+                color: '#E8E8E8',
+                size: 16,
+                pulse: 0.5,
+                glow: '#ffffff',
+                poetry: 'зовнішнє = внутрішнє\n\nтиша\nочищення\nзвʼязок',
+                state: 'mirror'
+            },
+            {
+                id: 'drawing',
+                label: 'Аркуш',
+                x: 0.25, y: 0.7,
+                color: '#8B7355',
+                size: 14,
+                pulse: 0.6,
+                glow: '#8B7355',
+                poetry: 'хаос на папері\n\nвипуск\nструктурування',
+                state: 'release'
+            },
+            {
+                id: 'flowers',
+                label: 'Квіти',
+                x: 0.78, y: 0.75,
+                color: '#9DC183',
+                size: 12,
+                pulse: 0.4,
+                glow: '#9DC183',
+                poetry: 'крихкість\nтурбота\n\nтихе життя',
+                state: 'soft'
+            },
+            {
+                id: 'clinic',
+                label: 'Простір',
+                x: 0.72, y: 0.65,
+                color: '#A0AEC0',
+                size: 18,
+                pulse: 0.75,
+                glow: '#A0AEC0',
+                poetry: 'пауза\nбезпека\n\nмісце для\nвідновлення',
+                state: 'container'
+            }
+        ];
+
+        const edges = [
+            { from: 'self', to: 'music', weight: 0.9, type: 'listens' },
+            { from: 'self', to: 'chat', weight: 0.95, type: 'supported' },
+            { from: 'snow', to: 'self', weight: 0.6, type: 'mirrors' },
+            { from: 'drawing', to: 'self', weight: 0.7, type: 'externalizes' },
+            { from: 'clinic', to: 'self', weight: 0.85, type: 'contains' },
+            { from: 'flowers', to: 'clinic', weight: 0.5, type: 'softens' }
+        ];
+
+        // Animation state
+        let time = 0;
+        let activeNode = null;
+        let particles = [];
+
+        // Mouse interaction
+        canvas.addEventListener('mousemove', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+
+            let found = null;
+            nodes.forEach(node => {
+                const nx = node.x * canvas.width;
+                const ny = (node.y + breathe(node)) * canvas.height;
+                const size = getSize(node);
+                const dist = Math.sqrt((mouseX - nx) ** 2 + (mouseY - ny) ** 2);
+
+                if (dist < size * 2) {
+                    found = node;
+                }
+            });
+
+            if (found !== activeNode) {
+                activeNode = found;
+                updatePoetry();
+            }
+        });
+
+        function updatePoetry() {
+            const panel = document.getElementById('poetry');
+            const text = document.getElementById('poetry-text');
+
+            if (activeNode) {
+                text.textContent = activeNode.poetry;
+                panel.style.borderColor = activeNode.color + '40';
+                panel.classList.add('active');
+            } else {
+                panel.classList.remove('active');
+            }
+        }
+
+        function breathe(node) {
+            const base = Math.sin(time * node.pulse * 2) * 0.01;
+            const secondary = Math.sin(time * node.pulse * 0.5) * 0.005;
+            return base + secondary;
+        }
+
+        function getSize(node) {
+            const baseSize = node.size;
+            const breatheSize = Math.sin(time * node.pulse * 1.5) * 2;
+            const hoverBonus = activeNode === node ? 8 : 0;
+            return baseSize + breatheSize + hoverBonus;
+        }
+
+        function getNode(id) {
+            return nodes.find(n => n.id === id);
+        }
+
+        // Particle system
+        function spawnParticle() {
+            if (Math.random() > 0.97) {
+                const edge = edges[Math.floor(Math.random() * edges.length)];
+                const from = getNode(edge.from);
+                const to = getNode(edge.to);
+
+                particles.push({
+                    fromNode: from,
+                    toNode: to,
+                    progress: 0,
+                    color: Math.random() > 0.5 ? '#D4AF37' : '#4A90D9'
+                });
+            }
+        }
+
+        function updateParticles() {
+            particles = particles.filter(p => p.progress < 1);
+            particles.forEach(p => {
+                p.progress += 0.015;
+            });
+        }
+
+        // Drawing
+        function drawGlow(x, y, radius, color, opacity) {
+            const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+            gradient.addColorStop(0, color + Math.floor(opacity * 255).toString(16).padStart(2, '0'));
+            gradient.addColorStop(1, color + '00');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(x - radius, y - radius, radius * 2, radius * 2);
+        }
+
+        function drawEdge(from, to, weight) {
+            const fromY = (from.y + breathe(from)) * canvas.height;
+            const toY = (to.y + breathe(to)) * canvas.height;
+            const fromX = from.x * canvas.width;
+            const toX = to.x * canvas.width;
+
+            // Glow
+            ctx.strokeStyle = from.color + '1A';
+            ctx.lineWidth = weight * 8;
+            ctx.beginPath();
+            ctx.moveTo(fromX, fromY);
+            ctx.lineTo(toX, toY);
+            ctx.stroke();
+
+            // Main line
+            const gradient = ctx.createLinearGradient(fromX, fromY, toX, toY);
+            gradient.addColorStop(0, from.color + '99');
+            gradient.addColorStop(1, to.color + '99');
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = weight * 2;
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(fromX, fromY);
+            ctx.lineTo(toX, toY);
+            ctx.stroke();
+        }
+
+        function drawNode(node) {
+            const x = node.x * canvas.width;
+            const y = (node.y + breathe(node)) * canvas.height;
+            const size = getSize(node);
+            const isActive = activeNode === node;
+
+            // Outer glow
+            drawGlow(x, y, size * 3, node.glow, isActive ? 0.15 : 0.08);
+
+            // Middle ring
+            ctx.strokeStyle = node.color + (isActive ? '80' : '33');
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.arc(x, y, size * 1.3, 0, Math.PI * 2);
+            ctx.stroke();
+
+            // Main circle
+            drawGlow(x, y, size * 1.5, node.color, isActive ? 0.5 : 0.3);
+            ctx.fillStyle = node.color + (isActive ? 'F0' : 'BF');
+            ctx.beginPath();
+            ctx.arc(x, y, size, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Inner highlight
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+            ctx.beginPath();
+            ctx.arc(x - size * 0.2, y - size * 0.3, size * 0.35, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Core
+            ctx.fillStyle = `rgba(255, 255, 255, ${0.4 + Math.sin(time * 2) * 0.1})`;
+            ctx.beginPath();
+            ctx.arc(x, y, size * 0.15, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Label
+            ctx.fillStyle = isActive ? '#ffffff' : 'rgba(255, 255, 255, 0.8)';
+            ctx.font = `${isActive ? '500' : '300'} ${isActive ? 14 : 11}px system-ui`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'top';
+
+            // Text shadow
+            ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+            ctx.shadowBlur = 10;
+            ctx.fillText(node.label, x, y + size + 8);
+            ctx.shadowBlur = 0;
+        }
+
+        function drawParticles() {
+            particles.forEach(p => {
+                const fromY = (p.fromNode.y + breathe(p.fromNode)) * canvas.height;
+                const toY = (p.toNode.y + breathe(p.toNode)) * canvas.height;
+                const x = p.fromNode.x + (p.toNode.x - p.fromNode.x) * p.progress;
+                const y = fromY + (toY - fromY) * p.progress;
+
+                drawGlow(x * canvas.width, y, 8, p.color, 1 - p.progress);
+                ctx.fillStyle = p.color + Math.floor((1 - p.progress) * 255).toString(16).padStart(2, '0');
+                ctx.beginPath();
+                ctx.arc(x * canvas.width, y, 3, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+
+        function drawCentralAura() {
+            const center = nodes[0];
+            const x = center.x * canvas.width;
+            const y = (center.y + breathe(center)) * canvas.height;
+            const radius = 150 + Math.sin(time * 0.5) * 20;
+
+            drawGlow(x, y, radius, '#D4AF37', 0.1);
+        }
+
+        // Main loop
+        function animate() {
+            time += 0.015;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw layers
+            drawCentralAura();
+
+            edges.forEach(edge => {
+                const from = getNode(edge.from);
+                const to = getNode(edge.to);
+                drawEdge(from, to, edge.weight);
+            });
+
+            drawParticles();
+
+            nodes.forEach(drawNode);
+
+            spawnParticle();
+            updateParticles();
+
+            requestAnimationFrame(animate);
+        }
+
+        // Stars
+        for (let i = 0; i < 30; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.top = Math.random() * 40 + '%';
+            star.style.animationDelay = Math.random() * 3 + 's';
+            document.body.appendChild(star);
+        }
+
+        // Snow
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.textContent = '❄';
+            snowflake.style.left = Math.random() * 100 + '%';
+            snowflake.style.setProperty('--drift', (Math.random() - 0.5) * 100 + 'px');
+            snowflake.style.animationDuration = (Math.random() * 5 + 10) + 's';
+            snowflake.style.fontSize = (Math.random() * 8 + 6) + 'px';
+            document.body.appendChild(snowflake);
+
+            setTimeout(() => snowflake.remove(), 15000);
+        }
+
+        setInterval(createSnowflake, 300);
+
+        // Start
+        animate();
+    </script>
+</body>
+</html>
