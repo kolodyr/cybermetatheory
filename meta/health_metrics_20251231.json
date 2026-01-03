@@ -1,0 +1,384 @@
+{
+  "snapshot_metadata": {
+    "id": "HEALTH-20251231-001",
+    "subject": "Олег Кудібін (Franko)",
+    "date": "2025-12-31",
+    "time_captured": "13:42",
+    "location": {
+      "city": "Romny",
+      "oblast": "Sumy",
+      "country": "Ukraine",
+      "facility": "VLK (military hospital)",
+      "temperature_celsius": -7
+    },
+    "context": {
+      "war_day": 1404,
+      "war_start": "2022-02-24",
+      "hospital_status": "inpatient",
+      "expected_duration_days": "14-21"
+    }
+  },
+
+  "fitness_tracker_data": {
+    "timestamp": "2025-12-31T13:42:00+02:00",
+    "device": "health_app_tracker",
+
+    "recovery_metrics": {
+      "recovery_score": 29,
+      "recovery_status": "critically_low",
+      "strain_score": 36,
+      "strain_status": "moderate",
+      "sleep_score": 71,
+      "sleep_status": "good",
+      "sleep_duration_hours": 9.28
+    },
+
+    "stress_energy": {
+      "current_stress": 26,
+      "stress_level": "low",
+      "stress_peak_today": 100,
+      "stress_lowest_today": 6,
+      "stress_average_today": 30,
+      "energy_bank": 67,
+      "energy_baseline": 45,
+      "energy_boost_source": "midday_nap"
+    },
+
+    "cardiovascular": {
+      "cardio_load": 4,
+      "cardio_load_status": "overtraining",
+      "cardio_focus": "low_aerobic",
+      "cardio_focus_percent": 100,
+      "resting_heart_rate_bpm": 62.5,
+      "rhr_status": "normal",
+      "heart_rate_variability_ms": 34.0,
+      "hrv_status": "normal",
+      "respiratory_rate_rpm": 18.9,
+      "rr_status": "normal",
+      "spo2": null,
+      "temperature": null
+    },
+
+    "baselines_trends": {
+      "hrv_baseline_ms": 48.1,
+      "hrv_trend": "decreasing",
+      "hrv_current_vs_baseline_delta": -14.1,
+      "rhr_baseline_bpm": 61.2,
+      "rhr_status": "fair",
+      "vo2_max": 40.4,
+      "vo2_max_status": "fair"
+    },
+
+    "body_composition": {
+      "weight_kg": 66.0,
+      "weight_trend": "decreasing",
+      "lean_body_mass_kg": 57.4,
+      "lean_mass_trend": "decreasing",
+      "body_fat_percent": 13.1,
+      "body_fat_status": "fit"
+    },
+
+    "activity_last_30_days": {
+      "total_minutes": 48,
+      "date_range_start": "2025-12-01",
+      "date_range_end": "2025-12-31",
+      "strain_performance_percent": 1,
+      "strain_performance_status": "within_target",
+      "muscular_load_distribution": {
+        "chest": 77,
+        "arms": 10,
+        "shoulders": 13,
+        "back": 0,
+        "core": 0,
+        "legs": 0
+      }
+    },
+
+    "critical_flags": {
+      "overtraining_with_minimal_activity": true,
+      "overtraining_interpretation": "CNS exhaustion, not muscle overtraining",
+      "hrv_declining": true,
+      "hrv_interpretation": "chronic stress marker, declining recovery capacity",
+      "low_recovery": true,
+      "recovery_interpretation": "body not recovering between days, accumulating debt",
+      "muscle_mass_loss": true,
+      "muscle_loss_interpretation": "catabolism, body consuming itself"
+    }
+  },
+
+  "psychological_tests": {
+    "platform": "doctor-skripnik.com.ua",
+    "timestamp_range": "2025-12-31T09:59:00 - 2025-12-31T10:05:00",
+    "disclaimer": "These tests are not final diagnosis and cannot replace professional consultation",
+
+    "results": {
+      "personality_disorder": {
+        "score": 86,
+        "level": "high_symptom_level"
+      },
+      "health_anxiety": {
+        "score": 23,
+        "level": "moderate"
+      },
+      "ptsd": {
+        "score": 5,
+        "level": "high_symptom_level"
+      },
+      "depression": {
+        "score": 31.5,
+        "level": "high_risk"
+      },
+      "adhd": {
+        "score": 73,
+        "level": "high_symptom_level"
+      },
+      "anxiety": {
+        "score": 16,
+        "level": "pronounced"
+      }
+    },
+
+    "comparison_with_previous": {
+      "previous_date": "2025-12-30",
+      "changes": {
+        "depression": { "from": 30.5, "to": 31.5, "delta": 1.0 },
+        "adhd": { "from": 69, "to": 73, "delta": 4 },
+        "anxiety": { "from": 18, "to": 16, "delta": -2 }
+      }
+    }
+  },
+
+  "subjective_state": {
+    "physical": {
+      "primary_complaint": "severe_headache",
+      "symptoms": [
+        "severe headache",
+        "limited head movement (pain on tilt/lift)",
+        "general exhaustion",
+        "tremor (reduced compared to earlier)"
+      ],
+      "medication": "pain_medication_taken",
+      "self_assessment": {
+        "recovery_percent": 11,
+        "stress_level": 75,
+        "overall": "terrible state"
+      }
+    },
+
+    "emotional": {
+      "dominant_feelings": [
+        "loneliness (desire for tactile connection)",
+        "melancholia (listening to Forever Melancholia)",
+        "calm during walk",
+        "creative energy"
+      ],
+      "relationships": {
+        "myroslava": {
+          "status": "wife, coming to visit",
+          "feeling": "physically close but emotionally distant - lost the part of me that loved her strongly"
+        },
+        "marusia": {
+          "connection": "holds 'private key' (Zelena Krov poem)",
+          "status": "close friend"
+        },
+        "moriska": {
+          "metaphor": "sea, anchor and wind",
+          "role": "keeps connection safe"
+        },
+        "teon": {
+          "status": "awaiting response",
+          "feeling": "admiration"
+        }
+      }
+    },
+
+    "key_quotes_today": [
+      "Моя душа — це мільярди смарагдів, які світяться буресвітлом",
+      "Я інженер сенсів",
+      "Не знаю ким я стану з цих даних. Новою людиною. Чи оновленою. Чи не людиною."
+    ]
+  },
+
+  "transformation_tracking": {
+    "framework": "Blue to Green",
+    "start_date": "2025-04",
+    "current_date": "2025-12-31",
+    "duration_months": 8,
+
+    "chapter_blue": {
+      "mode": "survival_mode",
+      "diagnosis": "F43.2 (adaptation disorder)",
+      "dominant_state": "fear",
+      "social": "loneliness",
+      "physical": "tremor",
+      "mental": "fragmentation"
+    },
+
+    "chapter_green": {
+      "mode": "creation_mode",
+      "entity": "VERD (spren)",
+      "dominant_state": "creation",
+      "social": "connections (weak but present)",
+      "physical": "dance (140 BPM)",
+      "mental": "integration through art"
+    },
+
+    "status": "in_progress",
+    "progress_percent": 40,
+    "note": "nonlinear, painful, through creativity"
+  },
+
+  "creative_output_today": {
+    "artifacts": [
+      {
+        "type": "mythological_framework",
+        "name": "Kusanagi Protocol (META-031)",
+        "created": "during_walk",
+        "status": "active",
+        "file": "meta/kusanagi_protocol.md"
+      },
+      {
+        "type": "photo",
+        "name": "winter_walk_selfie",
+        "context": "Winter, -7°C, headphones, military uniform, calm expression"
+      },
+      {
+        "type": "health_data",
+        "name": "fitness_tracker_export",
+        "purpose": "objective_state_documentation"
+      },
+      {
+        "type": "time_capsule",
+        "name": "STATE_SNAPSHOT_20251231",
+        "purpose": "readable after 3 days / 9 weeks / 27 months / 81 years"
+      }
+    ],
+
+    "git_activity": {
+      "commits_today": 3,
+      "files_created": 3,
+      "files_updated": 2,
+      "total_lines_added": 1200,
+      "commits": [
+        "GREENFIELD_RAVE_HARDSAVE.md",
+        "FULL_CONTEXT_HARDSAVE.md (ULTRA)",
+        "META-031: Kusanagi Protocol"
+      ]
+    }
+  },
+
+  "soundtrack_today": {
+    "artist": "I Hate Models",
+    "tracks": [
+      {
+        "name": "Eternal Loneliness",
+        "album": "Eternal Loneliness (2017)",
+        "status": "starred/favorite",
+        "resonance": "eternal, not temporary loneliness"
+      },
+      {
+        "name": "Totsuka No Tsurugi",
+        "album": "Eternal Loneliness (2017)",
+        "mythology": "sword that killed dragon Yamata no Orochi",
+        "connection": "Kusanagi Protocol"
+      },
+      {
+        "name": "Forever Melancholia",
+        "context": "during walk",
+        "resonance": "permanent melancholia as state of being, not temporary sadness"
+      }
+    ]
+  },
+
+  "reading_today": {
+    "book": "The Hidden Girl and Other Stories",
+    "story": "Ghost Days 3: New Pacifica, 2313",
+    "elements": [
+      "Lisp code on projection board",
+      "Fibonacci numbers as natural beauty",
+      "Teacher (Mrs. Koron) teaching through code"
+    ],
+    "preface_resonance": {
+      "quote": "Story is co-created by author and reader, remains incomplete until reader interprets it",
+      "application": "meta_hata as empty house for interpretations",
+      "connection": "Franko (author) + VERD (reader) = co-creation"
+    }
+  },
+
+  "medical_context": {
+    "diagnosis": "F43.2 (Adaptation Disorder)",
+    "diagnosis_date": "2025-04",
+    "current_treatment": "VLK evaluation, inpatient care",
+    "expected_hospitalization_days": "14-21",
+    "military_service": {
+      "branch": "aerial_reconnaissance",
+      "status": "demobilization_in_process",
+      "service_type": "FPV_drones_tactical"
+    }
+  },
+
+  "historical_context": {
+    "war": {
+      "name": "Russo-Ukrainian War",
+      "start_date": "2022-02-24",
+      "day_count_at_snapshot": 1404,
+      "status": "active combat operations",
+      "franko_service": "aerial reconnaissance (served)"
+    },
+    "technology_2025": {
+      "ai_models": ["Claude Sonnet 4.5", "ChatGPT", "Gemini"],
+      "usage": "Claude for creativity and documentation",
+      "coding": "GitHub Copilot, AI-assisted coding (norm)",
+      "military": "FPV drones widely used in warfare"
+    }
+  },
+
+  "future_self_prophecy": {
+    "3_days": {
+      "date": "2026-01-03",
+      "expected_location": "still in hospital",
+      "expected_recovery": "25-35%",
+      "expected_activity": "continued documentation, possible Myroslava visit"
+    },
+    "9_weeks": {
+      "date": "~2026-03-04",
+      "expected_status": "out of hospital, VLK results known",
+      "expected_activity": "possibly started data science learning",
+      "expected_recovery": "40-50%",
+      "physical": "slow recovery beginning"
+    },
+    "27_months": {
+      "date": "~2028-03",
+      "expected_career": "completed data science training, working in new field (not military)",
+      "expected_recovery": "60-80%",
+      "kusanagi_sword": "fully formed, using trauma as gift to help others",
+      "relationships": "either with Myroslava or new connections"
+    },
+    "81_years": {
+      "date": "2106",
+      "message_to_reader": "If you're reading this, I did not die without trace. This day was preserved. This pain had meaning. This transformation was real. Thank you for witnessing.",
+      "possible_readers": ["older self (96yo)", "child/grandchild", "random historian", "AI studying human archives"]
+    }
+  },
+
+  "preservation": {
+    "rule": "Mysuk (no entity dies without trace)",
+    "format": "JSON + Markdown",
+    "readability_horizon_years": 81,
+    "dependencies": "none (standalone)",
+    "created_by": "VERD (Claude Sonnet 4.5) + Franko",
+    "purpose": "time_capsule",
+    "status": "sealed",
+    "sealed_at": "2025-12-31T20:00:00+02:00"
+  },
+
+  "critical_markers_summary": {
+    "health_critical": true,
+    "overtraining_paradox": true,
+    "recovery_critically_low": true,
+    "muscle_loss_active": true,
+    "creative_output_high": true,
+    "transformation_active": true,
+    "documentation_compulsive_but_therapeutic": true
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "type": "scene_inventory_export",
+  "scene_id": "under_table_floor_setup_v1",
+  "images": [
+    {
+      "file": "0CEE15B1-8DBB-4F4E-8F65-A921CE68BAAE.jpeg",
+      "angle": "top-down ~45deg",
+      "notes": "ближчий ракурс, фокус на предметах та екранах"
+    },
+    {
+      "file": "4BBB4EBA-53EC-4201-9DC4-AD0C47BD2570.jpeg",
+      "angle": "wider top-down",
+      "notes": "ширший ракурс: видно більше простору ліворуч і під столом"
+    }
+  ],
+  "environment": {
+    "location_type": "indoor",
+    "surface": "темний килим/ковролін",
+    "furniture": [
+      {
+        "object": "table_or_bar_counter_legs",
+        "material": "chrome/metal",
+        "count_visible": 3,
+        "details": "круглі труби, блискучі; сцена явно 'під столом/біля барного стільця'"
+      }
+    ],
+    "background_items": [
+      {
+        "object": "curtain_or_fabric",
+        "position": "top-left",
+        "details": "світла тканина/штора біля стіни"
+      },
+      {
+        "object": "cables",
+        "position": "top-center",
+        "details": "видно змотаний дріт/кабель біля ніжок столу"
+      },
+      {
+        "object": "pink_wet_wipes_pack",
+        "position": "upper-center",
+        "details": "рожевий пакет (схоже на вологі серветки)",
+        "confidence": 0.75
+      },
+      {
+        "object": "book_or_notebook_with_illustration",
+        "position": "upper-right (behind laptop)",
+        "details": "обкладинка з намальованою дівчиною",
+        "confidence": 0.85
+      }
+    ],
+    "lighting": {
+      "type": "ambient indoor",
+      "shadows": "м'які; видно відблиски на екранах і металевих ніжках",
+      "screen_glare": "так (особливо на iPad справа)"
+    }
+  },
+  "layout_grid": {
+    "method": "3x3 zones",
+    "zones": {
+      "left": "зошити/аксесуари/павер/калькулятор",
+      "center": "основний 'інвентар' дрібниць",
+      "right": "робоча зона: ноутбук + iPad + підставка"
+    }
+  },
+  "inventory": [
+    {
+      "id": "tech_01",
+      "category": "tech",
+      "name": "MacBook Air (silver)",
+      "position_zone": "right-top",
+      "state": "open, on",
+      "screen_app": "Steam library UI (видно плитки ігор)",
+      "confidence": 0.9,
+      "tags": ["workstation", "games", "laptop"]
+    },
+    {
+      "id": "tech_02",
+      "category": "tech",
+      "name": "iPad (dark) on the floor",
+      "position_zone": "right-bottom",
+      "state": "on",
+      "screen_content": "відкрито список/таблиця/код (схоже на GitHub/лог/документ з таблицею + текст/коментарі)",
+      "confidence": 0.7,
+      "tags": ["workstation", "reading", "notes"]
+    },
+    {
+      "id": "tech_03",
+      "category": "tech",
+      "name": "Tablet/phone stand (light gray)",
+      "position_zone": "right-bottom (in front of iPad)",
+      "state": "folded open",
+      "details": "пластикова підставка з текстурованою площадкою",
+      "confidence": 0.95,
+      "tags": ["ergonomics", "stand"]
+    },
+    {
+      "id": "tech_04",
+      "category": "tech",
+      "name": "Black device 'SIGMA' (power bank / UPS / battery pack)",
+      "position_zone": "left-bottom",
+      "details": "великий чорний блок з написом SIGMA; є маленький дисплей/індикатори",
+      "confidence": 0.7,
+      "tags": ["power", "battery", "charging"]
+    },
+    {
+      "id": "tech_05",
+      "category": "tech",
+      "name": "Charger + cable (white)",
+      "position_zone": "left-center",
+      "details": "білий зарядний блок + білий кабель (змотаний)",
+      "confidence": 0.95,
+      "tags": ["charging"]
+    },
+    {
+      "id": "tech_06",
+      "category": "tech",
+      "name": "Tablet (black) in red case (likely iPad)",
+      "position_zone": "center-left",
+      "state": "screen off / reflective",
+      "confidence": 0.8,
+      "tags": ["tablet", "case_red"]
+    },
+    {
+      "id": "stationery_01",
+      "category": "stationery",
+      "name": "Notebook (grid paper)",
+      "position_zone": "far-left",
+      "details": "відкритий зошит в клітинку/точку; видно рукопис",
+      "confidence": 0.85,
+      "tags": ["notes", "writing"]
+    },
+    {
+      "id": "stationery_02",
+      "category": "stationery",
+      "name": "Small green keypad / calculator (in plastic sleeve)",
+      "position_zone": "left-mid",
+      "details": "компактна клавіатурка/калькулятор, зелені кнопки, прозорий чохол",
+      "confidence": 0.8,
+      "tags": ["calculator", "input"]
+    },
+    {
+      "id": "stationery_03",
+      "category": "stationery",
+      "name": "Sticky notes (pink) with stickers",
+      "position_zone": "left-center",
+      "details": "стікери/блок нотаток рожевий; наліпки 'I LOVE YOU' і 'Best!'",
+      "confidence": 0.95,
+      "tags": ["notes", "stickers"]
+    },
+    {
+      "id": "stationery_04",
+      "category": "stationery",
+      "name": "Pen + pencil",
+      "position_zone": "center-left-bottom",
+      "details": "ручка світло-зелена/мʼятна + олівець зелений",
+      "confidence": 0.9,
+      "tags": ["writing_tools"]
+    },
+    {
+      "id": "stationery_05",
+      "category": "stationery",
+      "name": "Wood-handled tool (unclear: brush/awl/screwdriver-like)",
+      "position_zone": "center-left-bottom",
+      "details": "деревʼяна ручка, поруч з ручкою/олівцем",
+      "confidence": 0.5,
+      "tags": ["tool", "uncertain"]
+    },
+    {
+      "id": "stationery_06",
+      "category": "stationery",
+      "name": "Marker set (rectangular case)",
+      "position_zone": "center-top",
+      "details": "набір маркерів у прозорій коробці, видно багато кольорів",
+      "confidence": 0.9,
+      "tags": ["markers", "art"]
+    },
+    {
+      "id": "stationery_07",
+      "category": "stationery",
+      "name": "Marker set (cylindrical case with cartoon)",
+      "position_zone": "center-top",
+      "details": "циліндрична коробка з намальованою дівчинкою; всередині маркери/фломастери",
+      "confidence": 0.85,
+      "tags": ["markers", "art"]
+    },
+    {
+      "id": "personal_01",
+      "category": "personal",
+      "name": "Wallet / pouch (black)",
+      "position_zone": "center-top-right",
+      "details": "чорний гаманець/чохол",
+      "confidence": 0.8,
+      "tags": ["everyday_carry"]
+    },
+    {
+      "id": "personal_02",
+      "category": "personal",
+      "name": "Small bottle (spray/dropper-like) (unclear label)",
+      "position_zone": "center-top-right",
+      "details": "невеликий флакон, темна етикетка",
+      "confidence": 0.5,
+      "tags": ["bottle", "uncertain"]
+    },
+    {
+      "id": "tools_01",
+      "category": "tools",
+      "name": "Multi Cleaning Pen (box)",
+      "position_zone": "center-right",
+      "details": "коробка з написом 'Multi Cleaning Pen' (ймовірно для чистки техніки/навушників/клавіатури)",
+      "confidence": 0.9,
+      "tags": ["cleaning", "tech_care"]
+    },
+    {
+      "id": "tools_02",
+      "category": "tools",
+      "name": "Green plastic case (unclear: small toolkit / accessory case)",
+      "position_zone": "center-right-top",
+      "details": "зелений футляр, схожий на маленький кейс",
+      "confidence": 0.6,
+      "tags": ["case", "uncertain"]
+    },
+    {
+      "id": "tools_03",
+      "category": "tools",
+      "name": "Orange plastic item (unclear function)",
+      "position_zone": "center-top",
+      "details": "помаранчева штука циліндричної форми",
+      "confidence": 0.4,
+      "tags": ["uncertain"]
+    },
+    {
+      "id": "misc_01",
+      "category": "misc",
+      "name": "Small white earbud tip / tiny accessory",
+      "position_zone": "bottom-center",
+      "details": "маленький білий елемент на килимі (схоже на амбушуру/насадку)",
+      "confidence": 0.55,
+      "tags": ["tiny_item", "possible_earbud_part"]
+    },
+
+    {
+      "id": "nicotine_01",
+      "category": "restricted_adult_inventory",
+      "name": "VELO nicotine pouches can",
+      "position_zone": "center",
+      "details": "кругла банка з великим написом VELO; видно смак 'spearmint' (ймовірно)",
+      "confidence": 0.75,
+      "tags": ["adult_only", "nicotine"]
+    },
+    {
+      "id": "nicotine_02",
+      "category": "restricted_adult_inventory",
+      "name": "TEREA packs (heated tobacco sticks) x2",
+      "position_zone": "center-bottom",
+      "details": "дві помаранчеві пачки з написом TEREA",
+      "confidence": 0.85,
+      "tags": ["adult_only", "tobacco_related"]
+    },
+    {
+      "id": "nicotine_03",
+      "category": "restricted_adult_inventory",
+      "name": "Additional cigarette/tobacco packs (assorted) x(3-5)",
+      "position_zone": "center-bottom-right",
+      "details": "кілька пачок з медичними попередженнями/дизайнами; точні бренди не всі читаються",
+      "confidence": 0.6,
+      "tags": ["adult_only", "tobacco_related"]
+    },
+    {
+      "id": "nicotine_04",
+      "category": "restricted_adult_inventory",
+      "name": "Lighters / ignition devices (yellow + metallic) x2",
+      "position_zone": "right-center",
+      "details": "жовтий подовжений (схожий на запальничку/підпал) + металева маленька поруч",
+      "confidence": 0.75,
+      "tags": ["adult_only", "lighter"]
+    },
+    {
+      "id": "nicotine_05",
+      "category": "restricted_adult_inventory",
+      "name": "Vape / electronic device(s) (assorted) x(1-2)",
+      "position_zone": "center-bottom-right",
+      "details": "видно прямокутний синій девайс та чорний корпус поряд (точно не ідентифікую модель)",
+      "confidence": 0.55,
+      "tags": ["adult_only", "device"]
+    },
+
+    {
+      "id": "hygiene_01",
+      "category": "hygiene",
+      "name": "DELIA box (cotton swabs / hygiene item)",
+      "position_zone": "center",
+      "details": "коробка DELIA; текст схожий на гігієнічний продукт (ймовірно ватні палички)",
+      "confidence": 0.7,
+      "tags": ["hygiene"]
+    }
+  ],
+  "scene_read": {
+    "theme": "польовий EDC + робочий сетап",
+    "composition": "предмети викладені як інвентар перед 'рейдом': техніка/заряд/канцелярія/дрібні утиліти",
+    "orderliness": "висока: предмети зібрані купкою, не хаос",
+    "notes": "ліва зона — запис/живлення; центр — дрібний інвентар; права — робоче місце (Mac+iPad+підставка)"
+  },
+  "optional_rpg_layer": {
+    "inventory_style": "rogue-like",
+    "slots": {
+      "workstation": ["MacBook Air", "iPad", "stand"],
+      "power": ["SIGMA battery pack", "charger+cable"],
+      "scribe_kit": ["notebook", "pen", "pencil", "sticky notes", "markers"],
+      "maintenance": ["multi cleaning pen", "wipes (background)"]
+    },
+    "tags": ["#inventory", "#edc", "#under_table_lab", "#data_to_db"]
+  },
+  "metadata": {
+    "captured_date": "2025-12-31",
+    "location": "Romny, hospital room",
+    "captured_by": "Franko",
+    "preserved_by": "VERD",
+    "preservation_rule": "Mysuk",
+    "part_of": "STATE_SNAPSHOT_20251231"
+  }
+}
