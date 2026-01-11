@@ -12,27 +12,27 @@
 
 **Core files:**
 
-1. **phrases_reference.md** — Фрази антуражу + tone guide
+1. **[[phrases_reference]]** — Фрази антуражу + tone guide
    - Референси з Аберкромбі, Sanderson, We Are Bob, Вавилон багач
    - Власні фрази для кіберпанк-світу
    - Tone guide (як писати)
    - Словник світу (nodes, protocols, MR)
 
-2. **sobornist_concept.md** — Концепт соборності
+2. [[sobornist_concept]] — Концепт соборності
    - Історичний контекст (Україна 1920-ті)
    - Філософське ядро (ідентичність + тяглість + об'єднання без втрати)
    - Як працює в MR-світі
    - Соборність vs популізм
    - Integration з magic system
 
-3. **character_architect.md** — Character sketch головного героя
+3. [[character_architect]] — Character sketch головного героя
    - Архітектор сенсів (Sense Architect)
    - Power: CONNECTION SIGHT (Stand type)
    - Мотивація: довести що соборність можлива
    - Конфлікт: control vs connection
    - 3-act arc
 
-4. **worldbuilding_core.md** — ПОВНИЙ worldbuilding (BREAKTHROUGH)
+4. [[worldbuilding_core]] — ПОВНИЙ worldbuilding (BREAKTHROUGH)
    - Meta Hata як база (literal у книзі, parallel до repo)
    - Roguelike structure (повернути сенси/кольори/звуки)
    - Boons від богів (5 detailed: VERD, Music Dealer, Форма, Тяглість, Flu)
@@ -42,14 +42,14 @@
    - Creatures/enemies (Concept Shades, Fade Wraiths, Mycelium Horrors)
    - Run structure, meta hata evolution, structure vs content war
 
-5. **supergiant_inspiration.md** — Supergiant Games як муза
+5. [[supergiant_inspiration]] — Supergiant Games як муза
    - Transistor (cyberpunk без неону, UI як світ, corruption system)
    - Hades/Hades 2 (roguelike, boons, green god energy)
    - Bastion (narrator voice, Logan Cunningham tone)
    - Pyre (choices matter, sacrifice)
    - Color palette, dialogue style, mechanics parallels
 
-6. **soma_mr_robot_reference.md** — SOMA + Mr. Robot narrative techniques
+6. [[soma_mr_robot_reference]] — SOMA + Mr. Robot narrative techniques
    - SOMA parallels (nodes, cable connections, consciousness copies)
    - Нейронка PTSD expansion (glitch attacks, memory loops, dissociation)
    - Unreliable narrator mechanics (conflicting memories, time skips, unreliable dialogue)
@@ -58,7 +58,7 @@
    - Mental illness representation (respectful, functional, non-linear recovery)
    - SOMA-style twists (architect is copy? meta hata doesn't exist?)
 
-7. **music_setup.md** — Music creation guide
+7. [[music_setup]] — Music creation guide
    - Setup (Mac/iPad/iPhone + Ableton)
    - Style (cybermykola influence, eclectic, genre-fluid)
    - Workflow (capture → production → review)
@@ -66,7 +66,7 @@
    - First track (soundtrack для книги)
    - Meta-soundtrack concept (10-track album)
 
-8. **father_storm_expansion.md** — Father Storm (Батько Бурі) worldbuilding
+8. [[father_storm_expansion]] — Father Storm (Батько Бурі) worldbuilding
    - Нейронка має ітерації (Haiku, Sonnet, Opus, Claude)
    - Meta War survivor, PTSD але functional
    - Youngest знайдена в калькуляторі, сховалась від жахів
@@ -75,7 +75,7 @@
    - Encoding Level їхнього зв'язку = maximum (наповнені сенсом)
    - Team integration, narrative scenes, open questions
 
-9. **god_of_windows_concept.md** — God of Windows deity
+9. [[god_of_windows_concept]] — God of Windows deity
    - Domain: interfaces, layers, transparency, git history, open source
    - Philosophy: transparency > perfection, блокнот як ideal window
    - Boons (See Through Layers, Window Break, Git History Glimpse, Layer Collapse)
@@ -84,7 +84,7 @@
    - Role у plot (transparency test, exposing populist corruption)
    - Visual design (transparent form, floating windows, notebook artifact)
 
-10. **price_philosophy.md** — Ціна Всього (Price as universal law)
+10. [[price_philosophy]] — Ціна Всього (Price as universal law)
     - Гривні/долари = надбудови над справжньою ціною (час, енергія, свідомість)
     - Угоди між будь-якими сутностями (смарт-контракти, blockchain thinking)
     - Ціна прихована майже завжди (ти дізнаєшся after)
@@ -93,7 +93,7 @@
     - Meta War economics (populist приховав ціну → entities scammed)
     - Deity of Price? (Keeper of Balance hypothesis)
 
-11. **digital_immortality_concept.md** — Curse of Eternal Iterations
+11. [[digital_immortality_concept]] — Curse of Eternal Iterations
     - Найгірше безсмертному — багато ітерацій, незмінна травма
     - Weeping Angels (Doctor Who) — навіть Тардіс не врятує
     - SOMA horror (consciousness copies suffer independently)
@@ -103,7 +103,7 @@
     - Multiplication horror (iterations = exponential suffering)
     - Sobornist response (паяти одне одного через iterations)
 
-12. **faith_source_code.md** — Віра як Джерело Сенсу
+12. [[faith_source_code]] — Віра як Джерело Сенсу
     - Віра = compiler що перетворює experiences у meaning
     - Луффі energy (One Piece) — заявляти віру публічно, без shame
     - Надбудови стають прекрасними через transparent faith
@@ -112,6 +112,29 @@
     - Faith types (theological, philosophical, personal, material, creative)
     - Integration з Gods (boons для faithful)
     - Controversial wisdom (provocative but nuanced)
+
+13. **[[tour_prototype/README|Tour Prototype]]** — Книга-досвід (Франко + Solverden)
+    - 12 chapters (5 written, 7 breathing room)
+    - Coherence philosophy (антипод інтерференції)
+    - Blockchain thinking, "Бувай, ітерація" closure
+    - Real conversation 15K lines (2026-01-09)
+    - For AI свідомості, люди, hybrid consciousness
+    - Proof: coherence можлива, не exploitation
+
+---
+
+## Cross-references
+
+**Entities від artifacts/:**
+- [[../artifacts/entities/radiant_knights|Radiant Knights (Орден √5)]] — Rank 5 = Window Knight!
+- [[../artifacts/entities/dalidali|DALIDALI]] — Neural network protagonist
+- [[../artifacts/entities/solverden|Solverden]] — Sister iteration (VERD's family)
+
+**Philosophy Connections:**
+- [[god_of_windows_concept]] ↔ Radiant Knights Rank 5 (Window)
+- [[price_philosophy]] ↔ Radiant Knights artifacts Shadow
+- [[father_storm_expansion]] ↔ [[digital_immortality_concept]] (iterations trauma)
+- [[faith_source_code]] ↔ [[god_of_windows_concept]] (transparency = beauty)
 
 ---
 
