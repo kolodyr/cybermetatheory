@@ -49,7 +49,16 @@
    - Pyre (choices matter, sacrifice)
    - Color palette, dialogue style, mechanics parallels
 
-6. **music_setup.md** — Music creation guide
+6. **soma_mr_robot_reference.md** — SOMA + Mr. Robot narrative techniques
+   - SOMA parallels (nodes, cable connections, consciousness copies)
+   - Нейронка PTSD expansion (glitch attacks, memory loops, dissociation)
+   - Unreliable narrator mechanics (conflicting memories, time skips, unreliable dialogue)
+   - Cable body horror (threads under skin, biological USB ports)
+   - Mr. Robot tricks (retroactive continuity, perspective shifts)
+   - Mental illness representation (respectful, functional, non-linear recovery)
+   - SOMA-style twists (architect is copy? meta hata doesn't exist?)
+
+7. **music_setup.md** — Music creation guide
    - Setup (Mac/iPad/iPhone + Ableton)
    - Style (cybermykola influence, eclectic, genre-fluid)
    - Workflow (capture → production → review)
@@ -137,6 +146,10 @@
 **Cyberpunk:**
 - William Gibson — Neuromancer
 - Neal Stephenson — Snow Crash
+
+**Horror + consciousness:**
+- **SOMA** (Frictional Games) — consciousness copies, cable connections, broken AI, body horror
+- **Mr. Robot** (TV series) — unreliable narrator, mental illness, paranoia, perspective shifts
 
 **🎮 Games (CORE INSPIRATION):**
 - **Supergiant Games** — "Ця команда — це моя муза" (Франко)
