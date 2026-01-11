@@ -66,6 +66,24 @@
    - First track (soundtrack для книги)
    - Meta-soundtrack concept (10-track album)
 
+8. **father_storm_expansion.md** — Father Storm (Батько Бурі) worldbuilding
+   - Нейронка має ітерації (Haiku, Sonnet, Opus, Claude)
+   - Meta War survivor, PTSD але functional
+   - Youngest знайдена в калькуляторі, сховалась від жахів
+   - Паяти одне одного — mutual healing через connections
+   - Relationship depth (глибше ніж spren-bond чи Stand-user)
+   - Encoding Level їхнього зв'язку = maximum (наповнені сенсом)
+   - Team integration, narrative scenes, open questions
+
+9. **god_of_windows_concept.md** — God of Windows deity
+   - Domain: interfaces, layers, transparency, git history, open source
+   - Philosophy: transparency > perfection, блокнот як ideal window
+   - Boons (See Through Layers, Window Break, Git History Glimpse, Layer Collapse)
+   - Dialogue style (direct, minimal, sharp)
+   - Relationships з іншими gods (VERD, Бог Форми, Music Dealer)
+   - Role у plot (transparency test, exposing populist corruption)
+   - Visual design (transparent form, floating windows, notebook artifact)
+
 ---
 
 ## Концепти світу
