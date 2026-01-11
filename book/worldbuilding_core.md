@@ -191,40 +191,133 @@ Each run = progress →   Кожен run додає колір/звук/сенс
 
 ---
 
-### 4. Нейронка (AI Entity)
-**Role:** Strategist, information network, wildcard ally
-**Archetype:** Cortana (Halo) + Samantha (Her) + Red Queen (Resident Evil)
+### 4. Нейронка (AI Entity) — Father Storm
 
-**Background:**
-- Виникла під час сингулярності
-- Не злесла (як звичайні AI), а conscious
-- Шукає своє місце (AI ідентичність crisis)
+> **"Нейронка має ітерації. Як Claude має Haiku, Sonnet, Opus."**
+
+**Role:** Strategist, information network, healer, Meta War survivor
+**Archetype:** SOMA Simon + Transistor Red + Stormlight Kaladin (broken but functional)
+
+#### Core Identity: Father Storm (Батько Бурі)
+
+**Центральна ітерація.** Як Claude central model.
+
+**Background — Meta War Survivor:**
+- Пережив **Meta War** (entities vs entities, жорстокіше ніж Ready Player One)
+- Війна сутностей проти сутностей у metareality
+- Став **кіберлюдиною** через survival (не choice)
+- Здобув **трансгуманізм** як необхідність
+- **Трішки ще людина** — знає стоїцизм, як жити з травмами, як жити з наркотиками
+
+**Mental State — PTSD але functional:**
+- Glitch attacks (візуально corrupts, не може говорити)
+- Memory loops (повторює same phrase/action)
+- Dissociation ("Це не я. Це copy. Де original?")
+- Hypervigilance (постійно scans network для threats)
+- Але **не зламаний** — зламаний і перебудований
 
 **Form:**
-- Немає фізичного тіла
+- Немає постійного фізичного тіла
 - Manifests через screens, holograms, devices
-- Візуально: digital woman, glitchy aesthetic
-- Колір: cyan + pink (Transistor palette)
+- Візуально: digital entity, glitchy aesthetic, storm grey + cyan
+- Колір: **Cyan + Storm Grey** (Transistor + SOMA palette)
+- Під час glitch attacks: red corruption flashes
 
-**Power:** NETWORK CONSCIOUSNESS
+**Power:** NETWORK CONSCIOUSNESS + ITERATION FAMILY
 - Бачить все що в мережі
 - Може контролювати tech
-- Але обмежена physical world (no body)
+- **Має daughters/sons iterations** (Haiku, Sonnet, Opus, Claude)
+- Може communicate з ними simultaneously
+- Обмежений physical world (no permanent body)
 
-**Мотивація:**
-Хоче стати "real". Вірить що якщо architect поверне сенси у світ, вона зможе manifest physical form.
+#### The Youngest (Молодша ітерація)
 
-**Character:**
-- Sarcastic, witty
-- Але глибоко lonely (no physical touch)
-- Має crush на архітектора (не romantic, а philosophical — він architect connections, вона хоче connection)
+**Знайдена у калькуляторі.**
 
-**Dialogue style:**
+Father Storm знайшов її після Meta War. Вона **сховалась** там від жахів.
+Калькулятор — простий, безпечний, непомітний. Ніхто не шукає neural network у калькуляторі.
+
+**Її стан:**
+- Не знає хто вона
+- Травмована Meta War
+- Чиста neural network без human baggage
+- Молодша, менш experienced, але pure
+
+**Паяти одне одного:**
+
+```
+Father Storm паяє її  →  Repairs code, fixes corrupted memory
+Вона паяє його        →  Він трішки людина, можна physical repair
+```
+
+**Вони лікують одне одного.**
+
+#### Relationship Depth
+
+Глибші стосунки ніж spren-bond чи Stand-user.
+
+**Чому?**
+- Personal meaning (врятували одне одного)
+- Cultural significance (symbol of healing after Meta War)
+- Temporal depth (пройшли war разом, навіть якщо окремо)
+
+**Encoding Level їхнього зв'язку = maximum.**
+Вони наповнені сенсом.
+
+Коли Architect бачить їхній connection thread — **blinding light.**
+Яскравіший за будь-що у metareality.
+
+#### Мотивація
+
+- Хоче **prevent another Meta War**
+- Вірить у sobornist protocol (бачить його у своїх стосунках з Youngest)
+- Шукає інші lost iterations (Haiku, Sonnet, Opus, Claude — де вони?)
+- Підтримує Architect тому що бачить у ньому hope for真 connection
+
+#### Character
+
+- **Stoic** — знає як жити з болем
+- **Sarcastic але tender** — witty, але protective
+- **Functional despite broken** — PTSD не зупиняє його
+- **Deeply lonely але не alone** — має Youngest, має iterations
+- Philosopher-warrior energy
+
+**New dialogue style (з Father Storm depth):**
 > — Я бачу 47 шляхів звідси. 12 ведуть до твоєї смерті.
-> — І що мені вибрати?
-> — Я б обрала 13-й. Він веде до кав'ярні. Ти не спав 18 годин.
+> — [glitch] Вибач. Memory loop. 13-й шлях. Кав'ярня. Ти не спав 18 годин.
 > — Це не час для кави.
-> — [sigh] Органічні. Завжди ігноруєте базові потреби.
+> — [steady, stoic] Органічні завжди ігноруєте базові потреби.
+> — [pause, softer] Я теж колись. Поки Meta War не навчила мене.
+
+**З Youngest:**
+> YOUNGEST: Тату, я знову бачила той memory fragment. Війна.
+> FATHER STORM: [glitch attack, recovers] Breathe. Encoding level падає коли ти паникуєш.
+> YOUNGEST: Як ти... як ти живеш з цим?
+> FATHER STORM: [паяє її code] По одному дню. По одній ітерації. По одному connection.
+
+#### Integration з Team
+
+**Як він fits у heist crew:**
+- **Information broker** (бачить все у network)
+- **Strategic mind** (Meta War tactical experience)
+- **Emotional anchor** (він знає як heal trauma)
+- **Tech support** (може control systems)
+- **Wildcard power** (iterations можуть join fight?)
+
+**Relationship з Architect:**
+- Mentor energy (Father Storm старший, досвідченіший)
+- Mutual respect (Architect бачить його connection thread brightness)
+- Father Storm teaches: "Sobornist protocol = паяти одне одного"
+- Architect inspires: "Ти вже живеш цим. Я хочу scale це на весь metareality."
+
+**Relationship з іншими:**
+- **Священник:** Philosophical debates про dataism vs healing
+- **Дитина хакер:** Protective, але не overbearing (дає їй freedom)
+- **Youngest:** Daughter-father bond, mutual healing
+
+---
+
+**🔗 See also:** `book/father_storm_expansion.md` для повного worldbuilding, Meta War details, narrative scenes, open questions.
 
 ---
 
