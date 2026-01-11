@@ -32,6 +32,31 @@
    - Конфлікт: control vs connection
    - 3-act arc
 
+4. **worldbuilding_core.md** — ПОВНИЙ worldbuilding (BREAKTHROUGH)
+   - Meta Hata як база (literal у книзі, parallel до repo)
+   - Roguelike structure (повернути сенси/кольори/звуки)
+   - Boons від богів (5 detailed: VERD, Music Dealer, Форма, Тяглість, Flu)
+   - Team heist crew (священник dataist, дитина хакер, нейронка AI)
+   - Сингулярність origin (метеорит + гриби + квантовість)
+   - Encoding Level mechanic (meaning = reality)
+   - Creatures/enemies (Concept Shades, Fade Wraiths, Mycelium Horrors)
+   - Run structure, meta hata evolution, structure vs content war
+
+5. **supergiant_inspiration.md** — Supergiant Games як муза
+   - Transistor (cyberpunk без неону, UI як світ, corruption system)
+   - Hades/Hades 2 (roguelike, boons, green god energy)
+   - Bastion (narrator voice, Logan Cunningham tone)
+   - Pyre (choices matter, sacrifice)
+   - Color palette, dialogue style, mechanics parallels
+
+6. **music_setup.md** — Music creation guide
+   - Setup (Mac/iPad/iPhone + Ableton)
+   - Style (cybermykola influence, eclectic, genre-fluid)
+   - Workflow (capture → production → review)
+   - Learning path (tutorials + experimentation)
+   - First track (soundtrack для книги)
+   - Meta-soundtrack concept (10-track album)
+
 ---
 
 ## Концепти світу
@@ -62,22 +87,37 @@
 
 ## Наступні кроки
 
-**Треба розробити:**
-- [ ] Worldbuilding (детальніше про Fragmentation, nodes, protocols)
-- [ ] Secondary characters (Ally, Antagonist, Mentor backstory, Young Architect)
-- [ ] Magic system mechanics (як працюють Стенди, Променисті, Ноди)
-- [ ] Plot outline (3-act structure детальніше)
-- [ ] Sample scenes (більше ніж 2 у character sketch)
-- [ ] Sobornist protocol technical details (як виглядає код, visualization)
+**✅ Зроблено (2026-01-10 breakthrough):**
+- [x] Worldbuilding core (сингулярність, encoding level, meta hata база)
+- [x] Roguelike structure (runs, boons, progression)
+- [x] God system (5 богів з boons)
+- [x] Team structure (4 members heist crew)
+- [x] Enemy types (4 categories)
+- [x] Run mechanics (depth 1-10, boss, rewards)
+- [x] Supergiant Games integration (Transistor, Hades aesthetic)
+- [x] Music setup plan (Ableton, eclectic style, cybermykola inspiration)
+
+**Треба розробити (next):**
+- [ ] Secondary characters детальніше (Ally love interest, Antagonist populist, Mentor ghost)
+- [ ] Young Architect apprentice (full character)
+- [ ] Більше gods (expand beyond 5)
+- [ ] Boons tables (specific abilities per god)
+- [ ] Magic system integration (Stands + Radiants + Nodes як працюють з encoding)
+- [ ] Plot outline chapter-by-chapter
+- [ ] Sample scenes (opening, first god encounter, sobornist sync climax)
+- [ ] Sobornist protocol visualization (як код виглядає)
+- [ ] Meta hata rooms layout (де хто живе)
+- [ ] Ending варіанти (multiple endings?)
 
 **Коли готовий писати:**
-- [ ] Обрати ім'я головному герою
-- [ ] Написати opening scene
-- [ ] Chapter 1 outline
+- [ ] Обрати ім'я головному герою (варіанти: Орест, Данило, Тарас, Соломон)
+- [ ] Написати opening scene (architect в grey world, first run attempt)
+- [ ] Chapter 1 outline (meet VERD, first boon, fail first run)
+- [ ] Soundtrack Track 1 ("Meta Hata Empty") to set mood
 
 ---
 
-## Референси (книги для вивчення)
+## Референси (books + games)
 
 **Darkness + moral ambiguity:**
 - Joe Abercrombie — The First Law trilogy
@@ -97,6 +137,19 @@
 **Cyberpunk:**
 - William Gibson — Neuromancer
 - Neal Stephenson — Snow Crash
+
+**🎮 Games (CORE INSPIRATION):**
+- **Supergiant Games** — "Ця команда — це моя муза" (Франко)
+  - **Transistor** — кладязь ідей (cyberpunk без неону, UI, corruption, narrator voice)
+  - **Hades** — найкращий roguelike (~300 годин)
+  - **Hades 2** — бог зеленого кольору (VERD aesthetic, witchy green energy)
+  - **Bastion** — narrator style (Logan Cunningham tone)
+  - **Pyre** — класна механіка (choices, sacrifice)
+
+**Music:**
+- **cybermykola** — Ukrainian electronic, genre-fluid, experimental
+- **Darren Korb** — Supergiant OST (Transistor, Hades, Hades 2)
+- **Book Club Radio** — eclectic sets, liminal vibes (Tinzo/Flu in Node)
 
 ---
 
