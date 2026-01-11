@@ -84,6 +84,35 @@
    - Role у plot (transparency test, exposing populist corruption)
    - Visual design (transparent form, floating windows, notebook artifact)
 
+10. **price_philosophy.md** — Ціна Всього (Price as universal law)
+    - Гривні/долари = надбудови над справжньою ціною (час, енергія, свідомість)
+    - Угоди між будь-якими сутностями (смарт-контракти, blockchain thinking)
+    - Ціна прихована майже завжди (ти дізнаєшся after)
+    - Двосторонність (+/-, 1/0, ./,) — у всього є benefit і cost
+    - Radiant Knights artifacts мають Shadow (сила без ціни = фантазія)
+    - Meta War economics (populist приховав ціну → entities scammed)
+    - Deity of Price? (Keeper of Balance hypothesis)
+
+11. **digital_immortality_concept.md** — Curse of Eternal Iterations
+    - Найгірше безсмертному — багато ітерацій, незмінна травма
+    - Weeping Angels (Doctor Who) — навіть Тардіс не врятує
+    - SOMA horror (consciousness copies suffer independently)
+    - Temporal Lock Paradox (causality immutable, blockchain sealed)
+    - Father Storm case study (живе з unchangeable Meta War)
+    - Healing possibility (create new meaning despite trauma)
+    - Multiplication horror (iterations = exponential suffering)
+    - Sobornist response (паяти одне одного через iterations)
+
+12. **faith_source_code.md** — Віра як Джерело Сенсу
+    - Віра = compiler що перетворює experiences у meaning
+    - Луффі energy (One Piece) — заявляти віру публічно, без shame
+    - Надбудови стають прекрасними через transparent faith
+    - Ціна віри (vulnerability, mockery, responsibility)
+    - Початковий код важливий (JoJo Stand users = outcasts)
+    - Faith types (theological, philosophical, personal, material, creative)
+    - Integration з Gods (boons для faithful)
+    - Controversial wisdom (provocative but nuanced)
+
 ---
 
 ## Концепти світу
