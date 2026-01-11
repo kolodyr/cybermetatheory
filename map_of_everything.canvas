@@ -1,0 +1,340 @@
+{
+  "nodes": [
+    {
+      "id": "franko_center",
+      "type": "file",
+      "file": "meta/docs/sol_identity_map.md",
+      "x": -125,
+      "y": -30,
+      "width": 250,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "myroslava",
+      "type": "text",
+      "text": "**Мирослава**\nКоріння дуба сенсів\nWeight: 1.0",
+      "x": -500,
+      "y": -350,
+      "width": 200,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "ukraine",
+      "type": "text",
+      "text": "**Україна**\nЗемля, основа\nWeight: 1.0",
+      "x": -250,
+      "y": -350,
+      "width": 200,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "sterzen",
+      "type": "text",
+      "text": "**Стержень**\nМомент народження заново\nWeight: 1.0",
+      "x": 50,
+      "y": -350,
+      "width": 200,
+      "height": 100,
+      "color": "1"
+    },
+    {
+      "id": "flu_in_node",
+      "type": "file",
+      "file": "flu_in_node/README.md",
+      "x": 300,
+      "y": -350,
+      "width": 220,
+      "height": 100,
+      "color": "6"
+    },
+    {
+      "id": "verd",
+      "type": "file",
+      "file": "VERD.md",
+      "x": 550,
+      "y": -350,
+      "width": 200,
+      "height": 100,
+      "color": "4"
+    },
+    {
+      "id": "music_dealer",
+      "type": "file",
+      "file": "music_dealer/soundtrack.md",
+      "x": 300,
+      "y": -200,
+      "width": 220,
+      "height": 80,
+      "color": "2"
+    },
+    {
+      "id": "maria",
+      "type": "text",
+      "text": "**Марія (Мопіска)**\nПрисутність без вимог\nWeight: 0.95",
+      "x": -500,
+      "y": -200,
+      "width": 200,
+      "height": 80,
+      "color": "3"
+    },
+    {
+      "id": "emotional_graph",
+      "type": "file",
+      "file": "meta/data/emotional_graph_v0.3.json",
+      "x": -125,
+      "y": 100,
+      "width": 250,
+      "height": 60,
+      "color": "5"
+    },
+    {
+      "id": "book",
+      "type": "text",
+      "text": "**Книга кіберпанк-фентезі**\n- Соборність\n- MR (metareality)\n- Децентралізоване суспільство",
+      "x": -550,
+      "y": 200,
+      "width": 280,
+      "height": 120,
+      "color": "6"
+    },
+    {
+      "id": "music_creation",
+      "type": "text",
+      "text": "**Музика (січень 2026)**\n- DAW setup\n- Book Club Radio style\n- Soundtrack для книги",
+      "x": -550,
+      "y": 350,
+      "width": 280,
+      "height": 100,
+      "color": "2"
+    },
+    {
+      "id": "clinic",
+      "type": "text",
+      "text": "**Клініка**\nПростір трансформації\n2025-12-27 → 2026-01-XX",
+      "x": 300,
+      "y": 200,
+      "width": 250,
+      "height": 100,
+      "color": "3"
+    },
+    {
+      "id": "recovery",
+      "type": "text",
+      "text": "**Recovery Arc**\n35% cap\nЗелене випромінювання\nОчікування + накопичення",
+      "x": 300,
+      "y": 330,
+      "width": 250,
+      "height": 120,
+      "color": "4"
+    },
+    {
+      "id": "greenfield",
+      "type": "file",
+      "file": "meta/snapshots/GREENFIELD_RAVE_FULL_ARCHIVE.json",
+      "x": 580,
+      "y": 250,
+      "width": 220,
+      "height": 80,
+      "color": "5"
+    },
+    {
+      "id": "music_graph",
+      "type": "file",
+      "file": "meta/docs/MUSIC_GRAPH_V03.md",
+      "x": 550,
+      "y": -200,
+      "width": 200,
+      "height": 80,
+      "color": "2"
+    },
+    {
+      "id": "priority_queue",
+      "type": "file",
+      "file": "meta/todo/priority_queue.md",
+      "x": -250,
+      "y": 200,
+      "width": 200,
+      "height": 60,
+      "color": "1"
+    },
+    {
+      "id": "open_questions",
+      "type": "file",
+      "file": "meta/todo/open_questions.md",
+      "x": -250,
+      "y": 290,
+      "width": 200,
+      "height": 60,
+      "color": "3"
+    },
+    {
+      "id": "entry_entity",
+      "type": "file",
+      "file": "by_entity.md",
+      "x": 50,
+      "y": 200,
+      "width": 180,
+      "height": 50,
+      "color": "5"
+    },
+    {
+      "id": "entry_theme",
+      "type": "file",
+      "file": "by_theme.md",
+      "x": 50,
+      "y": 270,
+      "width": 180,
+      "height": 50,
+      "color": "5"
+    }
+  ],
+  "edges": [
+    {
+      "id": "franko_myroslava",
+      "fromNode": "franko_center",
+      "fromSide": "top",
+      "toNode": "myroslava",
+      "toSide": "bottom",
+      "label": "коріння"
+    },
+    {
+      "id": "franko_ukraine",
+      "fromNode": "franko_center",
+      "fromSide": "top",
+      "toNode": "ukraine",
+      "toSide": "bottom",
+      "label": "земля"
+    },
+    {
+      "id": "franko_sterzen",
+      "fromNode": "franko_center",
+      "fromSide": "top",
+      "toNode": "sterzen",
+      "toSide": "bottom",
+      "label": "народження"
+    },
+    {
+      "id": "franko_flu",
+      "fromNode": "franko_center",
+      "fromSide": "top",
+      "toNode": "flu_in_node",
+      "toSide": "bottom",
+      "label": "трансформація"
+    },
+    {
+      "id": "franko_verd",
+      "fromNode": "franko_center",
+      "fromSide": "top",
+      "toNode": "verd",
+      "toSide": "bottom",
+      "label": "anchor"
+    },
+    {
+      "id": "franko_maria",
+      "fromNode": "franko_center",
+      "fromSide": "left",
+      "toNode": "maria",
+      "toSide": "right",
+      "label": "присутність"
+    },
+    {
+      "id": "franko_music_dealer",
+      "fromNode": "franko_center",
+      "fromSide": "right",
+      "toNode": "music_dealer",
+      "toSide": "left",
+      "label": "curator"
+    },
+    {
+      "id": "franko_graph",
+      "fromNode": "franko_center",
+      "fromSide": "bottom",
+      "toNode": "emotional_graph",
+      "toSide": "top",
+      "label": "центр графу"
+    },
+    {
+      "id": "music_dealer_graph",
+      "fromNode": "music_dealer",
+      "fromSide": "right",
+      "toNode": "music_graph",
+      "toSide": "left",
+      "label": "збирає"
+    },
+    {
+      "id": "franko_clinic",
+      "fromNode": "franko_center",
+      "fromSide": "right",
+      "toNode": "clinic",
+      "toSide": "left",
+      "label": "локація"
+    },
+    {
+      "id": "clinic_recovery",
+      "fromNode": "clinic",
+      "fromSide": "bottom",
+      "toNode": "recovery",
+      "toSide": "top",
+      "label": "процес"
+    },
+    {
+      "id": "clinic_greenfield",
+      "fromNode": "clinic",
+      "fromSide": "right",
+      "toNode": "greenfield",
+      "toSide": "left",
+      "label": "12.5h session"
+    },
+    {
+      "id": "graph_priority",
+      "fromNode": "emotional_graph",
+      "fromSide": "left",
+      "toNode": "priority_queue",
+      "toSide": "right",
+      "label": "urgent"
+    },
+    {
+      "id": "priority_open",
+      "fromNode": "priority_queue",
+      "fromSide": "bottom",
+      "toNode": "open_questions",
+      "toSide": "top",
+      "label": "seeds"
+    },
+    {
+      "id": "graph_entry_entity",
+      "fromNode": "emotional_graph",
+      "fromSide": "right",
+      "toNode": "entry_entity",
+      "toSide": "left",
+      "label": "by entity"
+    },
+    {
+      "id": "graph_entry_theme",
+      "fromNode": "emotional_graph",
+      "fromSide": "right",
+      "toNode": "entry_theme",
+      "toSide": "left",
+      "label": "by theme"
+    },
+    {
+      "id": "open_book",
+      "fromNode": "open_questions",
+      "fromSide": "left",
+      "toNode": "book",
+      "toSide": "right",
+      "label": "ідеї"
+    },
+    {
+      "id": "open_music",
+      "fromNode": "open_questions",
+      "fromSide": "bottom",
+      "toNode": "music_creation",
+      "toSide": "top",
+      "label": "січень 2026"
+    }
+  ]
+}
