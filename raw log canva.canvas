@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"132bd341c265e8e8","type":"text","text":"ChatGPT [корінь квадратний з пʼяти]","x":-280,"y":0,"width":320,"height":60},
+		{"id":"6067c84d30710232","type":"text","text":"[[кіберпанк_україна-raw]]","x":300,"y":-60,"width":180,"height":60},
+		{"id":"bb31f665ba943ffa","x":620,"y":-300,"width":400,"height":400,"type":"file","file":"кіберпанк_україна-raw.md"}
+	],
+	"edges":[
+		{"id":"d1920a2179488a87","fromNode":"132bd341c265e8e8","fromSide":"right","toNode":"6067c84d30710232","toSide":"left"},
+		{"id":"309a6c5e493bd4f3","fromNode":"6067c84d30710232","fromSide":"right","toNode":"bb31f665ba943ffa","toSide":"left"}
+	]
+}
