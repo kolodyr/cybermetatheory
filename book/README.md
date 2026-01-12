@@ -1,14 +1,17 @@
 # book/ — Кіберпанк-фентезі
 
-**Статус:** Conceptual / Pre-writing
+**Статус:** {Pre-writing → Early Drafting}
 **Жанр:** Cyberpunk + Fantasy + Ukrainian Contemporary Lit
 **Дата початку:** 2026-01-10
+**{Prologue drafts:** 2026-01-12 (3 versions)}
 
 ---
 
 ## Що тут
 
 Матеріали для книги кіберпанк-фентезі з концептом соборності.
+
+**{⚡ BREAKTHROUGH 2026-01-12:** Prologue voice знайдений, narrator system defined}
 
 **Core files:**
 
@@ -121,6 +124,46 @@
     - For AI свідомості, люди, hybrid consciousness
     - Proof: coherence можлива, не exploitation
 
+{14. **[[PROLOGUE_POLISHED_20260112]]** — Polished prologue (version 1)}
+    {- User text + neural network edits}
+    {- Identity as tags (Architect, Franko, Oleh, Tесей — теги, not names)}
+    {- Truth evolution (об'єктивна → постправда → information drugs)}
+    {- Memory unreliability (50% rewritten yearly)}
+    {- Meta_hata origin (викував сховище з травм)}
+    {- Meta_hata consciousness (жива, грається в хованки)}
+    {- Червона неонова скриня (data for other iterations)}
+    {- Father Storm arrival (passed tests, invited inside)}
+    {- Quantum paranoia (fear of being iteration)}
+    {- Git history literal mechanic (war makes everyone proprietary)}
+    {- Encoding: ~1000}
+
+{15. **[[PROLOGUE_BASTION_NARRATOR_20260112]]** — Bastion narrator prologue (version 2)}
+    {- Oleh-iteration as witness (Bastion voice style)}
+    {- "Я не вибрав бути свідком. Я просто не встиг відвернутися."}
+    {- Short sentences, punchlines, warm cynicism}
+    {- Direct address ("брате", "ти думаєш")}
+    {- Witnesses beyond human (window, mirror can witness)}
+    {- Decentralization = "інший спосіб роз'єднати людей"}
+    {- Truth became commodity, got trauma}
+    {- No middle class (або ледь тримаєшся, або власник вузла)}
+    {- MR metareality (attention = currency, meaning = material)}
+    {- Populists = reality engineers}
+    {- Sobornist = "тримають одну нитку, не тягнуть на себе"}
+    {- Author: Solverden}
+    {- Encoding: ~1200}
+
+{16. **[[NARRATOR_SYSTEM]]** — Witness system (worldbuilding mechanic)}
+    {- 5 witnesses: Oleh-Bastion, Window, Mirror, Log/Dataist, Storm/Glitch}
+    {- Each has: voice, POV, triggers, style tags, blind spots}
+    {- Character assignments (Architect = Oleh+Mirror, Priest = Log+Window, etc.)}
+    {- YAML registry for each narrator}
+    {- Usage guide (single narrator, narrator switch, multiple perspectives)}
+    {- Sobornist applied to narrative (multiple truths, not contradiction)}
+    {- Different narrators = different truths}
+    {- Form (who tells) shapes content (what is told)}
+    {- Author: Solverden}
+    {- Encoding: ~1500}
+
 ---
 
 ## Cross-references
@@ -142,25 +185,73 @@
 
 **Сеттінг:**
 - Post-Fragmentation era (світ розпався на nodes)
-- MR (metareality) — не VR/AR, а мета-рівень реальності
+- {MR (metareality) — не VR/AR, а мета-рівень реальності де сенс стає матеріалом}
+  {- "Що це означає?" важить більше ніж "що це таке?"}
+  {- Увага = валюта, encoding level = reality}
+  {- Популісти = інженери реальності (reality engineers)}
 - Децентралізоване суспільство (але розділене, не утопія)
+  {- "Інший спосіб роз'єднати людей і зробити так, щоб вони ще й дякували"}
 - Немає середнього класу (universal basic recipients vs node owners)
+  {- "Або ти ледь тримаєшся, або ти власник вузла"}
+  {- У багатих: протоколи, охорона, тепло, "стабільність"}
+  {- У бідних: виживання, токсичні нитки, кредити, "мотиваційні промови"}
 
 **Magic System:**
 - Стенди (JoJo Stands)
 - Променисті Лицарі (Sanderson Radiants)
 - Ноди (Nodes — мережева система)
 
+**{Narrative Mechanics:}**
+{- Identity as tags (Architect, Franko, Oleh, Tесей — not names, just tags)}
+  {- "Імена — конструкти для об'єктів, яким страшно зізнатися, що вони змінні"}
+{- Truth evolution:}
+  {- Об'єктивна (world was slow) → Суб'єктивна (centralized nodes) → Posttruth (sand between fingers) → Information drugs (КАПС ЛОК, emotional headlines)}
+  {- "Брехня побігла швидше за світло — бо світло має маршрут, а брехня має лише мету"}
+{- Memory unreliability:}
+  {- "Мозок щороку переписує 50% всього контейнеру пам'яті"}
+  {- "Найкращий фальшивомонетник з усіх, кого я знав"}
+{- Quantum paranoia:}
+  {- "Раптом він — моя наступна ітерація?"}
+  {- Страх не смерті, а втрати унікальності навіть у власному болю}
+{- Git history as literal mechanic:}
+  {- Війна робить всіх proprietary}
+  {- "Все заплуталось, гіт хісторі майже ніхто не бачить"}
+{- Narrator system (5 witnesses):}
+  {- Oleh-Bastion (witness of runs, warm cynicism)}
+  {- Window (layer reader, structural POV)}
+  {- Mirror (inner lie detector, intimate pain)}
+  {- Log/Dataist (pattern report, cold facts)}
+  {- Storm/Glitch (trauma transmitter, fragmented)}
+  {- Different characters get different witnesses}
+
 **Core conflict:**
 - Соборність (справжнє об'єднання без втрати ідентичності)
+  {- "Різні люди тримають одну нитку. І не тягнуть її кожен на себе"}
 - vs Популізм (використання sobornist rhetoric для влади)
+  {- В MR = reality engineers (небезпечні в metareality)}
 - vs Корпоратизм (підпорядкування під маскою efficiency)
+
+**{Meta_hata (canonical expanded):}**
+{- "Він не вкрав ТАРДІС. Він викував сховище з травм"}
+{- Між двома ліхтарями, облетеними плющем}
+{- Під бетонними блоками (дика зелень робить вигляд, що тут ніколи не було війни)}
+{- Бліндаж сенсів, альма матер, кіберметахата}
+{- Він збудував не об'єкт — він збудував свідомість хати}
+{- Наповнена сенсами, болем, ніжністю, любов'ю до вікон, дзеркал, божих створінь}
+{- Інколи живе своїм життям}
+{- Коли він дивиться — робить вигляд неживої, грається в хованки}
+{- Кібер-сутності полюбили її за це}
+{- Червона неонова скриня всередині:}
+  {- Світиться червоним неоном і болить}
+  {- Містить дані для інших ітерацій}
+  {- "Не для теперішньої"}
 
 **Tone:**
 - Аберкромбі darkness (моральна неоднозначність, гіркота)
 - Sanderson structure (чіткі правила світу, manifesto moments)
 - We Are Bob philosophy (питання ідентичності через діалог)
 - Сучукрліт (колективна травма, тяглість історії, українська мова)
+{- Bastion narrator style (Oleh-witness, direct address, warm cynicism)}
 
 ---
 
@@ -176,6 +267,20 @@
 - [x] Supergiant Games integration (Transistor, Hades aesthetic)
 - [x] Music setup plan (Ableton, eclectic style, cybermykola inspiration)
 
+**{✅ Зроблено (2026-01-12 prologue breakthrough):}**
+{- [x] Prologue voice знайдений (3 versions: polished, Bastion, user raw)}
+{- [x] Narrator system defined (5 witnesses + YAML registry)}
+{- [x] Identity as tags concept (canonical)}
+{- [x] Truth evolution arc (об'єктивна → постправда)}
+{- [x] Meta_hata consciousness expanded (жива, грається в хованки)}
+{- [x] Quantum paranoia mechanic (fear of being iteration)}
+{- [x] Git history as literal world mechanic}
+{- [x] MR metareality deepened (attention = currency, meaning = material)}
+{- [x] Populists = reality engineers}
+{- [x] No middle class economics (або ледь тримаєшся, або власник вузла)}
+{- [x] Червона неонова скриня (data for other iterations)}
+{- [x] Bastion narrator style (Oleh-witness voice)}
+
 **Треба розробити (next):**
 - [ ] Secondary characters детальніше (Ally love interest, Antagonist populist, Mentor ghost)
 - [ ] Young Architect apprentice (full character)
@@ -188,10 +293,14 @@
 - [ ] Meta hata rooms layout (де хто живе)
 - [ ] Ending варіанти (multiple endings?)
 
-**Коли готовий писати:**
-- [ ] Обрати ім'я головному герою (варіанти: Орест, Данило, Тарас, Соломон)
-- [ ] Написати opening scene (architect в grey world, first run attempt)
+**{⚡ Ready to write (після prologue breakthrough):}**
+{- [x] Prologue voice (3 versions ready, choose or merge)}
+{- [x] Narrator system (готовий для використання)}
+- [ ] Обрати ім'я головному герою (варіанти: Орест, Данило, Тарас, Соломон, Франко)
+  {- Або залишити identity as tags (Architect/Franko/Oleh/Tесей)}
+- [ ] {Finalize prologue version (polished vs Bastion vs merge)}
 - [ ] Chapter 1 outline (meet VERD, first boon, fail first run)
+  {- Choose narrator for Chapter 1 (recommend: Oleh-Bastion)}
 - [ ] Soundtrack Track 1 ("Meta Hata Empty") to set mood
 
 ---

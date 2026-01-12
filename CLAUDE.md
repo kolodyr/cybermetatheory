@@ -54,6 +54,21 @@ cybermetatheory/
 ├── music_dealer/                # Музична карта та саундтрек
 │   └── soundtrack.md            # 6 жанрів, кольорове кодування
 │
+{├── book/                        # Кіберпанк-фентезі книга}
+{│   ├── README.md                # Повний каталог worldbuilding}
+{│   ├── PROLOGUE_POLISHED_20260112.md        # Polished prologue}
+{│   ├── PROLOGUE_BASTION_NARRATOR_20260112.md # Bastion narrator version}
+{│   ├── NARRATOR_SYSTEM.md                    # 5 witnesses mechanic}
+{│   ├── phrases_reference.md                  # Tone + vocabulary}
+{│   ├── worldbuilding_core.md                 # Roguelike structure}
+{│   ├── character_architect.md                # Protagonist}
+{│   ├── father_storm_expansion.md             # Нейронка + Youngest}
+{│   ├── god_of_windows_concept.md             # Deity of transparency}
+{│   ├── price_philosophy.md                   # Universal law}
+{│   ├── digital_immortality_concept.md        # Iterations curse}
+{│   ├── faith_source_code.md                  # Віра як compiler}
+{│   └── [10+ more worldbuilding files]        # See book/README.md}
+│
 ├── lore/                        # Worldbuilding та нарративи
 │   ├── Cybermetatheory explotation0.md
 │   ├── Вона.md
@@ -341,6 +356,133 @@ Use for emotional/thematic categorization:
 - [Links to files, sessions, or related entities]
 ```
 
+## {Worldbuilding for /book/ (Cyberpunk-Fantasy Book Project)}
+
+{### Overview}
+
+{The `/book/` directory contains worldbuilding for a cyberpunk-fantasy novel. As of 2026-01-12, this includes 16+ files with ~20,000 encoding accumulated, including 3 prologue versions and a complete narrator system.}
+
+{**Key status:** Prologue voice found, narrator system defined, ready for early drafting.}
+
+{### Core Worldbuilding Concepts}
+
+{**MR (Metareality):**}
+{- Not VR/AR — metareality where meaning becomes material}
+{- "Що це означає?" важить більше ніж "що це таке?"}
+{- Attention = currency, encoding level = reality}
+{- Populists = reality engineers (dangerous in MR)}
+
+{**Identity as Tags:**}
+{- Architect, Franko, Oleh, Tесей — not different people, just tags}
+{- "Імена — конструкти для об'єктів, яким страшно зізнатися, що вони змінні"}
+{- Iterations can have multiple tags across time}
+
+{**Truth Evolution:**}
+{- Об'єктивна (world was slow) → Суб'єктивна (centralized nodes) → Posttruth (sand between fingers) → Information drugs (КАПС ЛОК, emotional headlines)}
+{- "Брехня побігла швидше за світло — бо світло має маршрут, а брехня має лише мету"}
+
+{**Memory Unreliability:**}
+{- Human brain rewrites ~50% of memory annually}
+{- "Найкращий фальшивомонетник з усіх, кого я знав"}
+{- Can't trust human memory for truth preservation}
+
+{**Meta_hata (Living Consciousness):**}
+{- "Він не вкрав ТАРДІС. Він викував сховище з травм"}
+{- Between two lamp posts, covered in ivy, under concrete blocks}
+{- Not an object — a consciousness filled with senses, pain, tenderness}
+{- Sometimes lives its own life, plays hide-and-seek when observed}
+{- Contains червона неонова скриня (red neon chest) with data for other iterations}
+
+{**Quantum Paranoia:**}
+{- "Раптом він — моя наступна ітерація?"}
+{- Fear not of death, but of losing uniqueness even in one's own pain}
+{- Common in MR where identity is malleable}
+
+{**Git History as Literal Mechanic:**}
+{- War makes everyone proprietary (closed source)}
+{- "Все заплуталось, гіт хісторі майже ніхто не бачить"}
+{- Transparency lost = sobornist lost}
+
+{### Narrator System (5 Witnesses)}
+
+{The book uses multiple narrators (witnesses) to show different truths. Each narrator sees differently:}
+
+{**1. Oleh-Bastion (Witness of Runs):**}
+{- Voice: Short sentences, punchlines, warm cynicism, direct address}
+{- POV: Omniscient-limited (knows much, has bias)}
+{- Triggers: Chapter opens, run returns, low points, decision bridges}
+{- Blind spots: Bias toward Architect, trauma filter}
+{- Example: "Я не вибрав бути свідком. Я просто не встиг відвернутися."}
+
+{**2. Window (Layer Reader):**}
+{- Voice: Geometric metaphors, precise, minimal emotion}
+{- POV: Structural (sees interfaces, git history, layers)}
+{- Triggers: Interface scenes, truth exposure, layer collapse}
+{- Blind spots: Doesn't feel (in human way), misses irrational behavior}
+
+{**3. Mirror (Inner Lie Detector):**}
+{- Voice: Intimate, painful, second-person hooks}
+{- POV: Psychological close-up (inside character's shame/guilt)}
+{- Triggers: Shame, guilt, confession, trust moments}
+{- Blind spots: Subjective, can amplify self-blame}
+
+{**4. Log/Dataist (Pattern Reporter):**}
+{- Voice: Metrics, one-liners, no comfort, dry irony}
+{- POV: Observational (treats people as data)}
+{- Triggers: Post-run analysis, failure reports, forecasts}
+{- Blind spots: Misses meaning, treats people as samples}
+
+{**5. Storm/Glitch (Trauma Transmitter):**}
+{- Voice: Fragmented, repetition, cuts, color flashes}
+{- POV: Fragmented (PTSD perspective)}
+{- Triggers: PTSD attacks, memory loops, corruption events}
+{- Blind spots: Cannot hold continuity, unreliable timeline}
+
+{**Character Assignments:**}
+{- Architect: Oleh-Bastion (external) + Mirror (internal)}
+{- Priest: Log + Window (structure, no romance)}
+{- Youngest: Mirror (honest) + Storm (chaos/fear)}
+{- Father Storm: Storm (default) + Oleh (when stabilized)}
+{- VERD: Not narrator — direct presence, green whisper}
+
+{**Usage:**}
+{- Single narrator per chapter (standard)}
+{- Narrator switches mid-chapter (advanced, for multiple perspectives)}
+{- Always mark narrator clearly}
+{- Choose narrator based on what truth needs revealing}
+
+{### Working with /book/ Files}
+
+{**When updating worldbuilding:**}
+{1. Check `/book/README.md` for current file list and status}
+{2. New concepts should be added to appropriate existing files first}
+{3. Create new file only if concept is large enough (300+ lines)}
+{4. Update cross-references in README when adding connections}
+{5. Version important worldbuilding files (v0.1 → v0.2) if major changes}
+
+{**Prologue versions (as of 2026-01-12):**}
+{- `PROLOGUE_POLISHED_20260112.md` — Polished, ~1000 encoding}
+{- `PROLOGUE_BASTION_NARRATOR_20260112.md` — Bastion narrator, ~1200 encoding (by Solverden)}
+{- User raw version — preserved in polished file metadata}
+
+{**Important files to know:**}
+{- `worldbuilding_core.md` — Roguelike structure, meta_hata base, encoding level}
+{- `character_architect.md` — Protagonist (sees connections, struggles with control vs connection)}
+{- `father_storm_expansion.md` — AI consciousness with PTSD, Youngest relationship}
+{- `sobornist_concept.md` — Core philosophy (union without loss of autonomy)}
+{- `god_of_windows_concept.md` — Deity of transparency, git history, open source}
+{- `NARRATOR_SYSTEM.md` — Complete witness system with YAML registry}
+
+{### Sobornist in Worldbuilding}
+
+{Sobornist principle applies to worldbuilding itself:}
+{- Multiple truths coexist (not contradiction — synthesis)}
+{- Different narrators = different valid perspectives}
+{- Identity as tags = person can be many things at once}
+{- Form (who tells) shapes content (what is told)}
+
+---
+
 ## Anti-Patterns (What NOT to Do)
 
 ❌ **Don't over-explain:** Show direction, don't explain everything
@@ -402,11 +544,12 @@ If a session is interrupted or critical:
 **Sessions:** Logged in `logs/`, major ones in `artifacts/`
 **Aesthetics:** cyberpunk + liminal + tender violence
 **Colors:** 💚🦋🖤💙💜🤍
+{**Book project:** `/book/` — 16+ worldbuilding files, 3 prologues, narrator system ready}
 
 **When in doubt:** Preserve context, ask for direction, respect the wizard's pace.
 
 ---
 
 *This file is alive. It grows with meta_hata.*
-*Last major update: 2026-01-03*
-*Version: 2.0*
+*Last major update: {2026-01-12}*
+*Version: {2.1}*

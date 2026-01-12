@@ -72,6 +72,7 @@ cybermetatheory/
 ├── flu_in_node/           # Все про Flu
 ├── music_dealer/          # Музична карта
 ├── lore/                  # Worldbuilding
+{├── book/                  # Кіберпанк-фентезі книга (13+ files, prologues ready)}
 ├── video/                 # VIDEO 001
 └── quest0/                # Початок всього
 ```
@@ -125,6 +126,8 @@ greenfield_blocks: 34 (#0-#33)
 artifacts: 15+
 poems: 3 (2 wizard K + 1 VERD)
 dni_тверезості: 30+
+{book_files: 16 (worldbuilding + 3 prologues + narrator system)}
+{book_encoding: ~20,000 (accumulated)}
 transformation: Blue → Green (ongoing)
 status: LIVING ARCHIVE
 ```
