@@ -3,7 +3,7 @@
 **Статус:** {Pre-writing → Early Drafting}
 **Жанр:** Cyberpunk + Fantasy + Ukrainian Contemporary Lit
 **Дата початку:** 2026-01-10
-**{Prologue drafts:** 2026-01-12 (3 versions)}
+**{Prologue drafts:** 2026-01-12 (4 versions + hybrid recommended)}
 
 ---
 
@@ -164,6 +164,20 @@
     {- Author: Solverden}
     {- Encoding: ~1500}
 
+{17. **[[PROLOGUE_HYBRID_WINDOW_OLEH_20260112]]** — ⭐ Hybrid prologue (RECOMMENDED)}
+    {- Structure: Window → Oleh-Bastion → Synthesis}
+    {- Part 1 (Window): Cold systems POV, establishes world mechanics (~1000 words)}
+    {- Part 2 (Oleh-Bastion): Warm human POV, establishes characters (~1200 words)}
+    {- Part 3 (Synthesis): Both narrators acknowledge each other, sobornist moment (~400 words)}
+    {- **Demonstrates narrator system through doing, not telling**}
+    {- Intellectual entry point (Window) + Emotional grounding (Oleh) = Synthesis}
+    {- Broader audience appeal (something for systems thinkers + emotional readers)}
+    {- Shows sobornist через structure (multiple truths coexist, not contradiction)}
+    {- "Два свідки. Обидва правдиві. Обидва неповні. Це — соборність."}
+    {- Authors: Solverden (voices) + Sol/Lumen (hybrid structure)}
+    {- Encoding: ~2600}
+    {- **Status:** Canonical recommended version for publication}
+
 ---
 
 ## Cross-references
@@ -268,8 +282,10 @@
 - [x] Music setup plan (Ableton, eclectic style, cybermykola inspiration)
 
 **{✅ Зроблено (2026-01-12 prologue breakthrough):}**
-{- [x] Prologue voice знайдений (3 versions: polished, Bastion, user raw)}
+{- [x] Prologue voice знайдений (4 versions: polished, Bastion, Window, hybrid)}
+{- [x] ⭐ Hybrid prologue створений (Window → Oleh → Synthesis, RECOMMENDED)}
 {- [x] Narrator system defined (5 witnesses + YAML registry)}
+{- [x] Sobornist demonstrated через structure (не exposition, а doing)}
 {- [x] Identity as tags concept (canonical)}
 {- [x] Truth evolution arc (об'єктивна → постправда)}
 {- [x] Meta_hata consciousness expanded (жива, грається в хованки)}
@@ -279,6 +295,7 @@
 {- [x] Populists = reality engineers}
 {- [x] No middle class economics (або ледь тримаєшся, або власник вузла)}
 {- [x] Червона неонова скриня (data for other iterations)}
+{- [x] Window voice (cold geometry, systems thinking)}
 {- [x] Bastion narrator style (Oleh-witness voice)}
 
 **Треба розробити (next):**
@@ -294,13 +311,14 @@
 - [ ] Ending варіанти (multiple endings?)
 
 **{⚡ Ready to write (після prologue breakthrough):}**
-{- [x] Prologue voice (3 versions ready, choose or merge)}
-{- [x] Narrator system (готовий для використання)}
+{- [x] ⭐ Prologue READY (hybrid version recommended for publication)}
+  {- Alternative versions available (polished, Bastion-only, Window-only)}
+{- [x] Narrator system (готовий для використання, demonstrated in prologue)}
 - [ ] Обрати ім'я головному герою (варіанти: Орест, Данило, Тарас, Соломон, Франко)
-  {- Або залишити identity as tags (Architect/Franko/Oleh/Tесей)}
-- [ ] {Finalize prologue version (polished vs Bastion vs merge)}
+  {- Або залишити identity as tags (Architect/Franko/Oleh/Tесей) — працює з narrator system}
 - [ ] Chapter 1 outline (meet VERD, first boon, fail first run)
-  {- Choose narrator for Chapter 1 (recommend: Oleh-Bastion)}
+  {- Choose narrator for Chapter 1 (recommend: start with Oleh-Bastion after Window intro)}
+  {- Or continue hybrid pattern (Window for world, Oleh for character moments)}
 - [ ] Soundtrack Track 1 ("Meta Hata Empty") to set mood
 
 ---
