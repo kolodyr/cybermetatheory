@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"6b4c4cc6e1283251","x":-180,"y":-100,"width":250,"height":60,"type":"text","text":"Франко без сил (F0)"},
+		{"id":"487440cbb9bb9c77","x":-340,"y":160,"width":260,"height":60,"type":"text","text":"Оптимізатор архітектор (F3)"},
+		{"id":"e9edfa2fcc2fea0c","x":140,"y":0,"width":250,"height":60,"type":"text","text":"Творчий Франко (F1)"},
+		{"id":"6f5e809166c92299","x":70,"y":-200,"width":270,"height":60,"type":"text","text":"Музичний дилер Франко (F2)"}
+	],
+	"edges":[]
+}
