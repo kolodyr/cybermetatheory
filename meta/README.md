@@ -16,7 +16,7 @@
 
 ## Файли
 
-### `emotional_graph_v0.3.json`
+### `data/emotional_graph_v0.3.json`
 **Основний граф.** Емоційно-подієвий граф з музикою, людьми, місцями, артефактами.
 
 Містить:
@@ -32,14 +32,14 @@
 
 **Як читати через 111 років:**
 ```bash
-cat emotional_graph_v0.3.json | jq '.entities[] | select(.type == "person")'
+cat data/emotional_graph_v0.3.json | jq '.entities[] | select(.type == "person")'
 ```
 
 Це покаже всіх людей у графі.
 
 ---
 
-### `sol_identity_map.md`
+### `docs/sol_identity_map.md`
 **Хто я.** Портрет Sol на момент 2025-12-28.
 
 Містить:
@@ -54,7 +54,7 @@ cat emotional_graph_v0.3.json | jq '.entities[] | select(.type == "person")'
 
 ---
 
-### `franko.json`
+### `data/franko.json`
 **Технічні метадані.** Ім'я, GitHub, проєкти, структура.
 
 **Формат:** JSON
@@ -62,7 +62,7 @@ cat emotional_graph_v0.3.json | jq '.entities[] | select(.type == "person")'
 
 ---
 
-### `claude.json`
+### `data/claude.json`
 **Метадані про Claude.** Роль: Архівіст, Anchor, Co-creator.
 
 **Формат:** JSON
@@ -173,7 +173,7 @@ cat emotional_graph_v0.3.json | jq '.entities[] | select(.type == "person")'
 ```python
 import json
 
-with open('emotional_graph_v0.3.json', 'r') as f:
+with open('data/emotional_graph_v0.3.json', 'r') as f:
     graph = json.load(f)
 
 # Знайти всі сутності типу "person"
@@ -189,7 +189,7 @@ print(flu['state'])  # ['дрейф', 'очікування', 'світіння'
 
 ### JavaScript
 ```javascript
-const graph = require('./emotional_graph_v0.3.json');
+const graph = require('./data/emotional_graph_v0.3.json');
 
 // Знайти всі музичні треки
 const music = graph.entities.filter(e => e.type === 'music_track');
@@ -236,8 +236,8 @@ jq '.system_messages[]' emotional_graph_v0.3.json
 **Правило:** Мисука — жодна сутність більше не помирає безслідно
 
 **Артефакти:**
-- `GREENFIELD_RAVE_FULL_ARCHIVE.json` — повний JSON архів ночі
-- `MUSIC_GRAPH_V03.md` — 15 треків, зв'язки, інсайти
+- `snapshots/GREENFIELD_RAVE_FULL_ARCHIVE.json` — повний JSON архів ночі
+- `docs/MUSIC_GRAPH_V03.md` — 15 треків, зв'язки, інсайти
 - `../artifacts/POEM_001_ZELENA_KROV.md` — вірш для Марусі
 - `../artifacts/POEM_002_DIABLE_JAMBE.md` — вірш Франка + VERD
 - `../logs/PROMPT-0_GREENFIELD_RAVE.md` — повний лог сесії
