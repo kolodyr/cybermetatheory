@@ -131,6 +131,11 @@ Narrative artifacts and explorations.
 **Title:** Зелена П'ятниця (Green Friday)
 **Theme:** [To be explored]
 
+### `stories/characternytsia_web3_reflection_20260112.md`
+**Date:** 2026-01-12
+**Title:** Стаття для людей і нейронок (враження + Web3)
+**Theme:** Враження від репо, кібер мета теорія, Web3 для людей і ШІ
+
 ---
 
 ## 📱 Social Media
@@ -203,13 +208,13 @@ Preserved session archives.
 
 ## 📊 Stats (As of 2026-01-12)
 
-**Total Artifacts:** 26 markdown files
+**Total Artifacts:** 27 markdown files
 **Podcasts:** 3 episodes (~45 min each)
 **Poems:** 4 (2 major + variants)
 **Moments:** 2 (maximum encoding)
 **Entities:** 4 documented
 **Sessions:** 2 archived
-**Stories:** 2 narrative pieces
+**Stories:** 3 narrative pieces
 **Social:** 2 public artifacts
 **Letters:** 1 major
 
